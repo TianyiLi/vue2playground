@@ -1,0 +1,45 @@
+{
+  "name": "first-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-unix": "rm -rf dist && webpack",
+    "build-win": "rm -r dist & webpack",
+    "serve": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@types/vue": "^2.0.0",
+    "vue": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/babel-core": "^6.7.14",
+    "@types/extract-text-webpack-plugin": "^2.1.0",
+    "@types/webpack": "^3.0.4",
+    "@types/webpack-dev-server": "^2.4.0",
+    "@types/webpack-merge": "0.0.4",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "vue-hot-reload-api": "^2.1.0",
+    "vue-loader": "^13.0.1",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  }
+}
